@@ -1,0 +1,83 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #efeff0;
+}
+
+body {
+    background-color: #1b4079;
+}
+h1 {
+    text-align: center;
+}
+form {
+    border: 2px red none;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+label, input[type=text] {
+    display: inline-block;
+}
+label {
+    border: 2px green none;
+    width: 80%;
+    text-align: right;
+    margin-right: 20%;
+    margin-left: auto;
+}
+input[type=text] {
+    border: 2px pink none;
+    text-align: center;
+    color: grey;
+    width: 50%;
+    margin-right: 5%;
+
+}
+button {
+    text-align: center;
+    color: black;
+    width: 20%;
+    /* padding: 20px 20px;
+    margin: 10px 0; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* .red {
+    width: 80%;
+    height: auto;
+    min-height: 50px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+
+} */
+section {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+div {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+
+div > h2 {
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+
+}
