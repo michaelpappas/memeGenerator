@@ -30,32 +30,23 @@ form.addEventListener("submit", function(event){
   newDiv.append(bottom);
   results.append(newDiv);
   newDiv.addEventListener('click', function(e){
-    // console.log(e);
-    // console.log(e.target);
-    // console.log(e.target.parentElement)
     e.target.parentElement.remove();
   })
   clearInputs();
 })
 
-// let memes =document.getElementsByClassName('meme');
-// memes[0].addEventListener('click', function(e){
-//   let div = e.target;
-//   div.addEventListener();
-// });
-
-
+//** clears the input fields */
 function clearInputs(){
   topText.value = '';
   bottomText.value = '';
   imgURL.value = '';
 }
+//** creates h2 text for the top and bottom meme text */
 function addH2(text){
   const h2 = document.createElement('h2');
   h2.innerText = text;
   return h2
-}
-
+}//** creates image to append to meme div */
 function addImage(url){
   const img = document.createElement('img');
   img.src=url;
@@ -64,7 +55,3 @@ function addImage(url){
 }
 
 
-// memes.addEventListener('click', function(e){
-//   let div = e.target;
-//   div.delete();
-// })
